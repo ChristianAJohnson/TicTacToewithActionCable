@@ -1,5 +1,5 @@
-var MoveList = React.createClass({
-  render: function() {
+class MoveList extends React.Component {
+  render() {
     moveList = []
 
     var imageForTile = function(tile) {
@@ -20,4 +20,4 @@ var MoveList = React.createClass({
 
     return (<div>{ moveList }</div>)
   }
-});
+};

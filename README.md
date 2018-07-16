@@ -1,38 +1,22 @@
-# Tic Tac Toe
+README
+This README would normally document whatever steps are necessary to get the application up and running.
 
-This is the classical TicTacToe game made with Ruby on Rails with ActionCable and ReactJs
+Things you may want to cover:
 
-## Main Idea
-The main idea is that there are 9 tiles
-with a number on them
+Ruby version
 
-| 1 | 2 |  3|
-|:-:|:-:|:-:|
-| 4 | 5 | 6 |
-| 7 | 8 | 9 |
+System dependencies
 
-There are 8 winning combinations
+Configuration
 
-```
+Database creation
 
-[1,2,3], [4,5,6], [7,8,9]
-[1,4,7], [2,5,8], [3,6,9]
-[1,5,9], [3,5,7]
+Database initialization
 
-```
-## Technical Description
-We have a Game object and a Move object
-Game has many moves
-Move acs as list
-Player 1 makes the odd moves
-Player 2 makes the even moves
+How to run the test suite
 
-- A click is made on a tile
-- The number of the tile is sent via Javascript and Action Cable to the Rails App
-- A move is saved to the database with the number of the tile
-- A job is created after the object is saved
-- The job sends an event through the ActionCable channel and informs React for the changes
-- React informs the relevant tiles
+Services (job queues, cache servers, search engines, etc.)
 
-If a player manages to click on a winning combination, we have a winner
-If we have 9 moves without a winner we have a tie
+Deployment instructions
+
+...

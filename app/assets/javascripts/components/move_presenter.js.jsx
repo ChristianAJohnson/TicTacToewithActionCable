@@ -1,9 +1,13 @@
-MovePresenter = React.createClass({
-  getInitialState: function() {
-    return ({ moves: this.props.moves })
-  },
+class MovePresenter extends React.Component {
+  
+  constructor(props, context) {
+    super(props, context);
+  this.state = {
+    moves: this.props.moves
+  }
+  }
 
-  updateMoves: function(data) {
+  updateMoves(data) {
     var currentMoves = this.props.moves
     var newMoves = currentMoves.push(data.move)
     this.setState({ moves: newMoves })
@@ -18,13 +22,13 @@ MovePresenter = React.createClass({
       alert('We have a tie')
       window.location.reload()
     }
-  },
+  }
 
-  componentDidMount: function() {
+  componentDidMount() {
     this.setupCable();
-  },
+  }
 
-  setupCable: function() {
+  setupCable() {
     App.move = App.cable.subscriptions.create("MoveChannel",
     {
       connected: function () {
@@ -43,13 +47,13 @@ MovePresenter = React.createClass({
 
       updateMoves: this.updateMoves
     });
-  },
+  }
 
-  render: function () {
+  render() {
     return (
       <div id='moves' className="col-xs-12 col-md-4 col-lg-4 col-lg-offset-4">
         <MoveList moves={ this.props.moves } />
       </div>
     )
   }
-})
+}

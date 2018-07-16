@@ -6,3 +6,12 @@
 2018-07-13 16:32:38.843 EDT [95847] FATAL:  database "db/tic_tac_toe_dev" does not exist
 2018-07-13 16:32:53.360 EDT [95862] FATAL:  database "db/tic_tac_toe_dev" does not exist
 2018-07-13 16:35:53.383 EDT [95920] FATAL:  database "db/tic_tac_toe_dev" does not exist
+2018-07-15 20:26:50.860 EDT [95818] LOG:  received smart shutdown request
+2018-07-15 20:26:50.861 EDT [95818] LOG:  worker process: logical replication launcher (PID 95825) exited with exit code 1
+2018-07-15 20:26:50.862 EDT [95820] LOG:  shutting down
+2018-07-15 20:26:50.873 EDT [95818] LOG:  database system is shut down
+2018-07-15 20:32:39.693 EDT [792] LOG:  listening on IPv6 address "::1", port 5432
+2018-07-15 20:32:39.693 EDT [792] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-07-15 20:32:39.693 EDT [792] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-07-15 20:32:39.712 EDT [793] LOG:  database system was shut down at 2018-07-15 20:26:50 EDT
+2018-07-15 20:32:39.718 EDT [792] LOG:  database system is ready to accept connections
