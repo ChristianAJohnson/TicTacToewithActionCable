@@ -1,0 +1,31 @@
+// Place all the styles related to the move controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#moves {
+  .tile {
+    border: 1px solid black;
+    min-width: 100px;
+    min-height: 100px;
+  }
+
+  .X_image {
+    display: block;
+    background-size: contain;
+    background-image: asset-url('X_image');
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 90px;
+    min-height: 90px;
+  }
+
+  .O_image {
+    display: block;
+    background-image: asset-url('O_image');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 90px;
+    min-height: 90px;
+  }
+}

@@ -1,0 +1,8 @@
+2018-07-13 16:32:26.103 EDT [95818] LOG:  listening on IPv6 address "::1", port 5432
+2018-07-13 16:32:26.103 EDT [95818] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-07-13 16:32:26.103 EDT [95818] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-07-13 16:32:26.115 EDT [95819] LOG:  database system was shut down at 2018-07-13 16:31:52 EDT
+2018-07-13 16:32:26.118 EDT [95818] LOG:  database system is ready to accept connections
+2018-07-13 16:32:38.843 EDT [95847] FATAL:  database "db/tic_tac_toe_dev" does not exist
+2018-07-13 16:32:53.360 EDT [95862] FATAL:  database "db/tic_tac_toe_dev" does not exist
+2018-07-13 16:35:53.383 EDT [95920] FATAL:  database "db/tic_tac_toe_dev" does not exist
